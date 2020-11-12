@@ -13,13 +13,15 @@ INSERT INTO post (id, nombre_de_usuario, fecha_de_creacion, contenido, descripci
 DELETE FROM post WHERE nombre_de_usuario='Carlos';
 INSERT INTO post (id, nombre_de_usuario, fecha_de_creacion, contenido, descripcion, titulo) VALUES (6, 'Carlos', '2020-11-13', 'Hola, mi nombre es Carlos. Hoy traigo una receta para compartir con amigos en la casa. Ingredientes(...) Preparacion(...)', 'Receta dulce', 'Postre tres leches');
 CREATE TABLE comentarios (id INT, fecha_y_hora_de_creacion TIMESTAMP, contenido VARCHAR(200), FOREIGN KEY (id) REFERENCES post (id));
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (1, 'Pamela', '2020-12-20 11:02:56', 'Deliciosa receta!!');
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (1, 'Pamela', '2020-12-24 15:17:59', 'Seguro la preparo con mi familia. Gracias!');
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, 'Carlos', '2020-12-12 16:20:22', 'Gracias a todos por compartir sus recetas');
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, 'Carlos', '2020-12-14 22:34:20', 'Buenisima receta, me quedo rico.');
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, 'Carlos', '2020-12-09 17:45:30', 'Excelente!');
-INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, 'Carlos', '2020-12-31 18:30:10', 'Me quedo lista la cena de ano nuevo.');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (1, '2020-12-20 11:02:56', 'Deliciosa receta!!');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (1, '2020-12-24 15:17:59', 'Seguro la preparo con mi familia. Gracias!');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, '2020-12-12 16:20:22', 'Gracias a todos por compartir sus recetas');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, '2020-12-14 22:34:20', 'Buenisima receta, me quedo rico.');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, '2020-12-09 17:45:30', 'Excelente!');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (6, '2020-12-31 18:30:10', 'Me quedo lista la cena de ano nuevo.');
 INSERT INTO post (id, nombre_de_usuario, fecha_de_creacion, contenido, descripcion, titulo) VALUES (7, 'Margarita', '2020-10-30', 'Hola, gracias por admitirme en este grupo. Quiero compartir con ustedes mi especialidad. Ingredientes(...) Preparacion(...)', 'Receta salada', 'Cazuela de ave');
-
-
-
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (7, '2020-12-08 11:47:30', 'Gracias por compartir, eres un gran chef.');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (7, '2020-12-11 12:56:39', 'Super');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (7, '2020-12-14 15:44:15', 'Que delicia!!');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (7, '2020-12-20 08:50:33', 'Empezare el dia cocinando esta receta');
+INSERT INTO comentarios (id, fecha_y_hora_de_creacion, contenido) VALUES (7, '2020-12-24 20:26:21', 'No me lo pierdo para esta navidad');
